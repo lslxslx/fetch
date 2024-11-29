@@ -8,7 +8,7 @@ const fetchdata = fetch(qd)
                 list = document.querySelector('article ul');
             if (aboutintel != null || list != null) {
                 aboutintel.innerHTML = `${json.about.intel.replace(/(?:\r\n|\r|\n)/g, '<br>')}`;
-                json.about.aims.forEach(x => {
+                json.about.browsers.forEach(x => {
                     list.innerHTML += `<li>${x.li.replace(/(?:\r\n|\r|\n)/g, '<br>')}</li>`;
                 });
             }
